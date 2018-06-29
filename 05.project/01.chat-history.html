@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="css/common.css" >
+    <link rel="stylesheet" href="css/container.css">
+
+    <link rel="stylesheet" href="css/signal.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/chat-list.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+</head>
+<body>
+
+
+    <div id="container">
+
+
+        <!-- 信号层 : start -->
+        <div id="signal">
+
+            <div id="signal-left" class="">
+
+                <div id="intensity" class="">
+                    <div class="signal-item signal-ok"></div>
+                    <div class="signal-item signal-ok"></div>
+                    <div class="signal-item signal-ok"></div>
+                    <div class="signal-item signal-lost"></div>
+                </div>
+
+                <div id="operator" class="">
+                    中国移动
+                </div>
+
+                <div id="g" class="">
+                    4G
+                </div>
+
+
+            </div>
+
+            <div id="time" class="xy-center ">12:00 AM</div>
+
+            <div id="signal-right" class="">
+
+                <div id="battery_area" class="">
+
+                    <div id="battery_body">
+                        <div id="battery_inset"></div>
+                    </div>
+                    <div id="battery_header"></div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- 信号层 : end -->
+
+
+        <!-- title : start -->
+        <div id="title" class="">
+
+            <div id="title_left" class=" xy-center">&lt; Back</div>
+
+            <div id="title_center" class=" xy-center">XXX群(11)</div>
+
+            <div id="title_right" class="x-right_y-center ">
+
+                <div id="popMenu"></div>
+
+            </div>
+
+
+        </div>
+        <!-- title : end -->
+
+
+
+        <!-- 消息列表 : start -->
+        <div id="chat-list">
+            <!-- 搜索 -->
+            <div id="search_area" class="">
+
+                <div id="search" class="xy-center">
+                    <div id="search_img" class=""></div>
+                    <div id="search_text" class=" xy-center">搜索</div>
+                    <div id="search_audio" class=""></div>
+                </div>
+
+            </div>
+            <!-- items -->
+            <div id="items">
+
+                <div class="item xy-center">
+
+                    <div class="item-img " style="background-image: url(../resources/img/boot-logo.jpg)">
+                        <div class="msg-alter"></div>
+                    </div>
+
+                    <div class="item-box ">
+
+                        <div class="item-up ">
+                            <div class="item-up-nickname  x-left_y-center">BootStrap</div>
+                            <div class="item-up-lastSendTime  x-right_y-center">1分钟前</div>
+                        </div>
+                        <div class="item-down ">
+                            <div class="item-msg-text  x-left_y-center ">中午吃什么.....</div>
+                            <div class="item-silence  x-right_y-center "></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="item xy-center">
+
+                    <div class="item-img " style="background-image: url(../resources/img/jquery.jpg)">
+                        <div class="msg-alter"></div>
+                    </div>
+
+                    <div class="item-box ">
+
+                        <div class="item-up ">
+                            <div class="item-up-nickname  x-left_y-center">jQuery</div>
+                            <div class="item-up-lastSendTime  x-right_y-center">1分钟前</div>
+                        </div>z
+                        <div class="item-down ">
+                            <div class="item-msg-audio  x-left_y-center ">[语音消息]</div>
+                            <div class="item-silence  x-right_y-center "></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- 消息列表 : end -->
+
+
+
+        <div id="menu">
+
+            <div class=""></div>
+            <div class=""></div>
+            <div class="" style="background-image: url(img/发现.svg)"></div>
+            <div class=""></div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+
+
+
+<script src="js/frame/jquery.js"></script>
+
+<script>
+
+
+    $(function(){
+
+        $("#popMenu").hide();
+
+        $("#title_right").click(function(){
+
+            $("#popMenu").toggle();
+
+        })
+
+
+
+    })
+
+</script>
